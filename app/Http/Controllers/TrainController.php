@@ -9,6 +9,8 @@ class TrainController extends Controller
 {
     public function index()
     {
-        return view("pages.trains");
+        $now = now();
+        $trains = Train::where('data_di_partenza', '>=', $now)->get();
+        return view('pages.trains', compact('trains'));
     }
 }
