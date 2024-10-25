@@ -3,7 +3,7 @@
 @section('page-title', 'Homepage')
 
 @section('main-content')
-    <div class="container my-5">
+    <div class="container-fluid my-5">
         <div class="row">
             <div class="col">
                 <h2>
@@ -14,6 +14,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">azienda</th>
+                                <th scope="col">Data di partenza</th>
                                 <th scope="col">Stazione di partenza</th>
                                 <th scope="col">Stazione di arrivo</th>
                                 <th scope="col">Orario di partenza</th>
@@ -29,6 +30,7 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">{{ $train->azienda }}</th>
+                                    <th scope="row">{{ $train->data_di_partenza }}</th>
                                     <td>{{ $train->stazione_partenza }}</td>
                                     <td>{{ $train->stazione_arrivo }}</td>
                                     <td>{{ $train->orario_partenza }}</td>
