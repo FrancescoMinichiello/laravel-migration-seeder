@@ -26,7 +26,7 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">{{ $train->azienda }}</th>
-                                    <th scope="row">{{ now() }}</th>
+                                    <th scope="row">{{ $train->data_di_partenza }}</th>
                                     <td>{{ $train->stazione_partenza }}</td>
                                     <td>{{ $train->stazione_arrivo }}</td>
                                     <td>{{ $train->orario_partenza }}</td>
