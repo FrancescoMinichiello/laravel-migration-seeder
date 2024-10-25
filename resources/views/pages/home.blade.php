@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col">
                 <h2>
-                    Scopri i treni in partenza oggi
+                    Treni:
                 </h2>
                 <div class="col">
                     <table class="table table-dark table-striped">
@@ -42,6 +42,11 @@
                         @empty
                         @endforelse
                     </table>
+                    <a href="/trains">
+                        <h2>
+                            Clicca qui per scoprire i treni in partenza oggi
+                        </h2>
+                    </a>
                 </div>
             </div>
         </div>
