@@ -20,7 +20,6 @@
                                 <th scope="col">Orario di arrivo</th>
                                 <th scope="col">Codice treno</th>
                                 <th scope="col">Numero di carrozze</th>
-                                <th scope="col">Passeggeri</th>
                                 <th scope="col">In orario</th>
                                 <th scope="col">Cancellato</th>
 
@@ -36,7 +35,6 @@
                                     <td>{{ $train->orario_arrivo }}</td>
                                     <td>{{ $train->codice_treno }}</td>
                                     <td>{{ $train->numero_carrozze }}</td>
-                                    <td>{{ $train->passeggeri }}</td>
                                     <td>{{ $train->in_orario ? 'Si' : 'No' }}</td>
                                     <td>{{ $train->cancellato ? 'Si' : 'No' }}</td>
                                 </tr>
