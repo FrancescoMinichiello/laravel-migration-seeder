@@ -14,13 +14,11 @@ class PassengerSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             $newPassenger = new Passenger();
             $newPassenger->first_name = $faker->firstName();
             $newPassenger->last_name = $faker->unique()->lastName();
-            $newPassenger->date_of_birth = $faker->dateTimeBetween("-80 years", "-16 years");
-            $newPassenger->over_60 = $faker->boolean();
-            $newPassenger->under_18 = $faker->boolean();
+            $newPassenger->date_of_birth = $faker->dateTimeBetween("-90 years", "-13 years");
             $newPassenger->nationality = $faker->country();
             $newPassenger->save();
         }

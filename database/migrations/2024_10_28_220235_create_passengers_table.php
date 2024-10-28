@@ -16,8 +16,6 @@ return new class extends Migration
             $table->string("first_name");
             $table->string("last_name");
             $table->date("date_of_birth");
-            $table->boolean("over_60");
-            $table->boolean("under_18");
             $table->string("nationality");
             $table->timestamps();
         });
